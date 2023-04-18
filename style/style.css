@@ -1,0 +1,171 @@
+:root {
+  --theme_1: #ddfff7;
+  --theme_2: #93e1d8;
+  --theme_3: #77bab2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background: linear-gradient(270deg, var(--theme_1), var(--theme_2));
+}
+
+header {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: white;
+  font-size: 56px;
+  letter-spacing: 15px;
+}
+
+.change_color {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.change_color button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  background-color: var(--theme_3);
+  color: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form input,
+form button {
+  border: none;
+  color: var(--theme_3);
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  margin: 0px 10px;
+}
+form input[type="text"] {
+  width: 350px;
+}
+form input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+form button {
+  width: 200px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--theme_3);
+  transition: all 0.25s ease;
+}
+form button:hover {
+  background-color: var(--theme_2);
+}
+
+div.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+div.sort button {
+  color: white;
+  background-color: var(--theme_3);
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.25s ease;
+}
+div.sort button:hover {
+  background-color: var(--theme_2);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section div.todo {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0.25rem;
+}
+section div.todo p {
+  background-color: var(--theme_3);
+  color: white;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+}
+section div.todo p.todo-text {
+  width: 50%;
+}
+section div.todo p.todo-time {
+  width: 30%;
+}
+section div.todo button {
+  color: var(--theme_2);
+  background-color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.25s ease;
+}
+section div.todo button:hover {
+  color: white;
+  background-color: var(--theme_2);
+}
+
+.done {
+  opacity: 0.4;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+} /*# sourceMappingURL=style.css.map */

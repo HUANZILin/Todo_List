@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="SEO描述" />
+    <meta name="keywords" content="關鍵字" />
+    <meta name="author" content="Karen Lin" />
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+    <title>Todo List</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header><h1>Todo List</h1></header>
+    <div class="change_color">
+      <button class="green">Green</button>
+      <button class="pink">Pink</button>
+      <button class="black">Black</button>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Todo event" required />
+      <input type="number" min="1" max="12" placeholder="M" required />
+      <input type="number" min="1" max="31" placeholder="D" required />
+      <button type="submit">Add into List</button>
+    </form>
+
+    <div class="sort">
+      <button><i class="fa-solid fa-arrow-down"></i></button>
+    </div>
+
+    <section></section>
+    <script>
+      $(".green").click(function (e) {
+        e.preventDefault();
+        $(":root").css("--theme_1", "#ddfff7");
+        $(":root").css("--theme_2", "#93e1d8");
+        $(":root").css("--theme_3", "#77bab2");
+      });
+
+      $(".pink").click(function (e) {
+        e.preventDefault();
+        $(":root").css("--theme_1", "#fedfe1");
+        $(":root").css("--theme_2", "#f4a7b9");
+        $(":root").css("--theme_3", "#ab3b3a");
+      });
+
+      $(".black").click(function (e) {
+        e.preventDefault();
+        $(":root").css("--theme_1", "#BDC0BA");
+        $(":root").css("--theme_2", "#434343");
+        $(":root").css("--theme_3", "#0C0C0C");
+      });
+    </script>
+  </body>
+  <script src="./app.js"></script>
+</html>
